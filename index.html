@@ -14,32 +14,39 @@
 </head>
         <body>
             <header class="header">
+                <div class="container main-nav">
                 <a class="header-logo" href=""> <span class="accent-logo">Web</span>Studio</a>
                 <nav class="header-navigation"> 
                     <ul class="header-list list">
-                        <li>
+                        <li class="header-item">
                             <a class="header-link link" href="">Студия</a>
                         </li>
-                        <li>
+                        <li class="header-item">
                             <a class="header-link link" href="./portfolio.html" target="_blank" rel="noreferrer noopener">Портфолио</a>
                         </li>
-                        <li>
+                        <li class="header-item">
                             <a class="header-link link" href="">Контакты</a> 
                         </li>
                     </ul>
                 </nav>
-                <div>
+                <!----------------------Auth nav------------------>
+                <div class="container auth-nav">
                     <a class="header-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
                     <a class="header-tel" href="tel:+380961111111">+38 096 111 11 11</a>
                 </div>
+            </div>
             </header>
         <main>
+            <!------------------------Hero------------------->
             <section class="hero">
+                <div class="container">
                 <h1 class="hero-text">Эффективные решения для вашего бизнеса</h1>
                 <button class="hero-button">Заказать услугу</button>
             </section>
+            <!----------------------Features------------------>
             <section class="features">
-                <ul class="features-list">
+                <div class="container">
+                <ul class="features-pre-list">
                     <li class="features-list list">
                         <h3 class="features-item">Внимание к деталям</h3>
                         <p class="features-description"> Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
@@ -57,9 +64,11 @@
                         <p class="features-description">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                     </li>
                 </ul>
+                </div>
             </section>
-            <!--Чем мы занимаемся-->
+            <!-------------------Чем мы занимаемся----------------->
             <section class="what-we-do">
+                <div class="container">
            <h2 class="what-we-do-title">Чем мы занимаемся</h2>
            <ul class="what-we-do list">
                 <li class="what-we-do-link">
@@ -72,8 +81,11 @@
                     <img src="./images/box3.jpg" alt="Дизайн" width="370"/>
                 </li>
            </ul>
+                </div>
             </section>
+            <!------------------Наша команда---------------------------->
             <section class="team">
+                <div class="container">
                 <h2 class="team-title">Наша команда</h2>
                 <ul class="team-list">
                     <li class="team-link">
@@ -97,9 +109,11 @@
                         <p lang="en" class="team-position">UI Designer</p>
                     </li>
                 </ul>
+            </div>
             </section>
         </main>    
         <footer class="footer">
+            <div class="container">
             <a  class="footer-logo" href=""> <span class="accent-logo">Web</span>Studio</a>
             <a href="https://goo.gl/maps/Fyau3RTndr1kcrQs9" target="_blank"
             rel="noopener noreferrer" class="footer-address">
@@ -107,6 +121,7 @@
             </a>
             <a class="footer-mail" href="mailto:info@example.com">info@example.com</a> 
             <a class="footer-tel" href="tel:+380991111111">+38 099 111 11 11</a>
+        </div>
         </footer>
         </body>
 </html>
