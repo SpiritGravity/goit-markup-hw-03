@@ -114,23 +114,13 @@ ul  {
 .accent-logo {
     color: var(--accent-color); 
 }
-.footer-logo {
-    font-family: Raleway;
-    font-style: normal;
-    color: #FFFFFF;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-}
 
 .header {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--secondary-title-color);
+    color: #212121;
     
 } 
 .header-link {
@@ -193,9 +183,10 @@ ul  {
     margin-top: 0;
     margin-bottom: 0;
     text-align: center;
-
 }
 .hero-text {
+    display: inline-block;
+    width: 696px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -204,10 +195,16 @@ ul  {
     text-transform: uppercase;
     color: var(--main-title-color);
     margin-bottom: 30;
+    /* padding:200px 452px 280px 482px; */
+    /* padding-top: 94px; */
+    align-items: center;
+ 
 }
 .hero-button {
-    display: inline-block;
+    display: block;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -218,6 +215,10 @@ ul  {
     border-radius: 4px;
     cursor: pointer;
     padding: 10px 32px;
+}
+.hero .container {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .link {
@@ -290,7 +291,9 @@ ul  {
 
 /* ------------------Наша команда---------------------------- */
 .team {
-    background-color: #F5F4FA;}
+    background-color: #F5F4FA;
+    padding-bottom: 94px;
+}
 .team-title {
     font-weight: bold;
     font-size: 36px;
@@ -301,9 +304,15 @@ ul  {
     padding-top: 94px;
     margin-bottom: 50px;
 }
+.card-box {
+    margin: 0;
+}
 .team-list {
+    display: flex;
+    flex-wrap: nowrap;
     list-style: none;
-    align-content: stretch;
+    align-content: center;
+    padding: 0;
     /* margin-left: -30px;
     margin-top: -50px; */
 }
@@ -312,13 +321,11 @@ ul  {
     text-decoration: none;
     background-color: #fff;
     width: 270px;
-    /* margin-left: 30px;
-    margin-top: 50px; */
-    /* flex-basis: calc ((100% - 120px)/4); */
     height: 368px;
+    /* margin-left: 30px;
     margin-top: 50px;
+    flex-basis: calc ((100% - 120px)/4); */
     border-radius: 0px 0px 4px 4px;
-    
 }
 
 .team-link:not(:last-child) {
@@ -348,10 +355,37 @@ ul  {
     letter-spacing: 0.03em;
     color: #757575;
 
+
+    /* ------------------Footer------------------ */
 }
 .footer {
     color: #FFFFFF;
-    background-color: #2F303A;;
+    background-color: #2F303A;
+    /* display: block; */
+    display: flex;
+    flex-direction: column;
+    /* padding-left: 215px; */
+    /* padding-left: auto; */
+    padding-left: 86px;
+}
+
+.footer-logo {
+    font-family: Raleway;
+    font-style: normal;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+
+    padding-top: 94px;
+    margin-bottom: 20px;
+}
+.footer-content {
+    flex-grow: 1;
+    display: block;
+    
 }
 .footer-address {
     text-decoration: none;
@@ -360,6 +394,10 @@ ul  {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #FFFFFF;
+    margin-bottom: 9px;
+}
+.footer-mail {
+    margin-bottom: 9px;
 }
 .footer-mail,
 .footer-tel
@@ -369,11 +407,20 @@ ul  {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+ }
+.footer-tel {
+    padding-bottom: 60px;
 }
-
 /* --------------PORTFOLIO-------------- */
 .portfolio { 
-    margin-top: 94px;
+    padding-top: 94px;
+}
+.header-pf {
+    border-bottom: 1px solid #ECECEC;
+    top: 0px;
+}
+.list-pf-button {
+    padding: 0;
 }
 .button {
     background-color: #F5F4FA;
@@ -417,13 +464,14 @@ ul  {
     flex-wrap: wrap;
     margin-right: -30px;
     margin-top: -30px; 
-    padding: 0;   
+    padding: 0px 0px 94px 0px;  
 }
 .item-pf {
     /* width: 370px; */
     margin-right: 30px;
     margin-top: 30px; 
     flex-basis: calc((100% - 90px)/3);
+    border: 1px solid #EEEEEE;
 }
 .item-pf:nth-child(3n) {
     margin-right: 0;
@@ -441,6 +489,8 @@ ul  {
     line-height: 2;
     letter-spacing: 0.06em;
     color: #212121;
+    margin-top: 20px;
+    margin-bottom: 4px;
 }
 
 .portfolio-description {
@@ -449,4 +499,9 @@ ul  {
     line-height: 1.87;
     letter-spacing: 0.03em;
     color: #757575;
+    margin-bottom: 20px;
+    }
+    .portfolio-title,
+    .portfolio-description {
+        margin-left: 24px;
     }
