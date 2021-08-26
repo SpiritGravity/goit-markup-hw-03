@@ -163,7 +163,7 @@ ul  {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--main-title-color);
-    
+
     margin-bottom: 30;
     align-items: center;
     margin-bottom: 30px;
@@ -240,13 +240,13 @@ ul  {
 .what-we-do-link {
     text-decoration: none;
     width: 370px;
-    margin-top: 50px;
 }
 .what-we-do-link:not(:last-child) {
     margin-right: 30px;
 }
-.what-we-do-list {
+.what-we-do {
     list-style: none;
+    margin-top: 50px;
 }
 
 /* ------------------Наша команда---------------------------- */
@@ -287,8 +287,8 @@ ul  {
     margin-right: 30px;
 }
 .team-description {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 .team-position {
     margin-top: 10px;
@@ -318,11 +318,9 @@ ul  {
     background-color: #2F303A;
     display: flex;
     flex-wrap: wrap;
-    padding-left: 86px;
     padding-top: 60px;
     padding-bottom: 60px;
 }
-
 .footer-logo {
     font-family: Raleway;
     font-style: normal;
@@ -356,8 +354,9 @@ ul  {
     color: #FFFFFF;
     margin-bottom: 9px;
 }
-.footer-mail {
-    margin-bottom: 9px;
+.footer-tel {
+    display: flex;
+    margin-top: 9px;
 }
 .footer-mail,
 .footer-tel
@@ -372,11 +371,11 @@ ul  {
     text-decoration: none;
     font-weight: normal;
 }
-.footer-address,
+/* .footer-address,
 .footer-content,
 .footer-logo {
     margin-left: 0;
-}
+} */
 /* --------------PORTFOLIO-------------- */
 
 .header-pf {
